@@ -6,7 +6,7 @@ require 'active_record'
 
 ActiveRecord::Base.establish_connection(
   :adapter => 'sqlite3',
-  :database => 'test.db'
+  :database => 'database/market'
 )
 
 class Client < ActiveRecord::Base
@@ -15,7 +15,7 @@ class Client < ActiveRecord::Base
   has_and_belongs_to_many :roles
 
   def save_user
-	find_or_create_by!(firstname: 'kingsley', lastname: 'ijomah', age: '31')
+
   end
 end
 

@@ -2,7 +2,7 @@ require 'user.rb'
 
 Given(/^that I have added the following users:$/) do |table|
   # table is a Cucumber::Ast::Table
-  puts Client.save_user
+  client = Client.new(firstname: 'kingsley', lastname: 'ijomah', age: '31')
 end
 
 When(/^I run a find all method$/) do
