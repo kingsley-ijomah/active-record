@@ -1,6 +1,8 @@
+require 'user.rb'
+
 Given(/^that I have added the following users:$/) do |table|
   # table is a Cucumber::Ast::Table
-  pending # express the regexp above with the code you wish you had
+  puts Client.save_user
 end
 
 When(/^I run a find all method$/) do
